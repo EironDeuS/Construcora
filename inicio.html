@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora Moderna | Soluciones Integrales en Construcción</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="contenedor nav-contenedor">
+            <a href="#" class="logo">CONSTRUCTORA<span>MODERNA</span></a>
+            
+            <button class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-lista" id="nav-lista">
+                <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#nosotros" class="nav-link">Conócenos</a></li>
+                <li class="nav-item"><a href="#servicios" class="nav-link">Nuestros Servicios</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link">Contáctanos</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="contenedor hero-contenido">
+            <h1>Construyendo tus sueños con excelencia</h1>
+            <p>Soluciones integrales en construcción con más de 15 años de experiencia en el mercado. Calidad, innovación y compromiso en cada proyecto.</p>
+            <a href="#contacto" class="btn">Solicita un presupuesto</a>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="seccion sobre-nosotros" id="nosotros">
+        <div class="contenedor">
+            <h2 class="seccion-titulo animar">Conócenos</h2>
+            
+            <div class="sobre-contenido">
+                <div class="sobre-texto animar">
+                    <p>En Constructora Moderna nos especializamos en ofrecer soluciones constructivas de alta calidad, adaptadas a las necesidades específicas de cada cliente. Nuestro equipo de profesionales altamente capacitados garantiza resultados excepcionales en cada proyecto.</p>
+                    
+                    <div class="mision-vision">
+                        <div class="mision">
+                            <h3><i class="fas fa-bullseye"></i>Misión</h3>
+                            <p>Superar las expectativas de nuestros clientes mediante proyectos de construcción innovadores, sostenibles y de alta calidad, con un equipo comprometido y procesos eficientes.</p>
+                        </div>
+                        
+                        <div class="vision">
+                            <h3><i class="fas fa-eye"></i>Visión</h3>
+                            <p>Ser reconocidos como líderes en el sector de la construcción por nuestra excelencia, innovación y compromiso con la satisfacción total del cliente.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sobre-imagen animar">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Equipo de construcción trabajando">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="seccion" id="servicios">
+        <div class="contenedor">
+            <h2 class="seccion-titulo animar">Nuestros Servicios</h2>
+            
+            <div class="servicios-grid">
+                <div class="servicio-card animar">
+                    <div class="servicio-icono">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Construcción de Obra Nueva</h3>
+                    <p>Desarrollamos proyectos desde cero, garantizando calidad en cada etapa del proceso constructivo con materiales de primera y mano de obra especializada.</p>
+                </div>
+                
+                <div class="servicio-card animar">
+                    <div class="servicio-icono">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3>Remodelaciones</h3>
+                    <p>Transformamos tus espacios existentes en ambientes modernos y funcionales, respetando la estructura y optimizando cada detalle.</p>
+                </div>
+                
+                <div class="servicio-card animar">
+                    <div class="servicio-icono">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <h3>Diseño Arquitectónico</h3>
+                    <p>Creación de planos y diseños personalizados que se adaptan a tus necesidades, gustos y presupuesto, con soluciones innovadoras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+<section class="seccion contacto" id="contacto">
+    <div class="contenedor">
+        <h2 class="seccion-titulo animar">Contáctanos</h2>
+        
+        <div class="contacto-contenido">
+            <div class="formulario-contacto animar">
+                <!-- Opciones de contacto -->
+                <div class="opciones-contacto">
+                    <button id="btn-email" class="btn-opcion btn-opcion-activo">
+                        <i class="fas fa-envelope"></i> Contacto por Email
+                    </button>
+                    <button id="btn-whatsapp" class="btn-opcion">
+                        <i class="fab fa-whatsapp"></i> Contacto por WhatsApp
+                    </button>
+                </div>
+                
+                <!-- Formulario de Email -->
+                <form id="contact-form" class="form-contacto form-email" action="https://formspree.io/f/xwpoqbjl" method="POST">
+                    <div class="form-grupo">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-grupo">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-grupo">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    
+                    <div class="form-grupo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+                
+                <!-- Formulario de WhatsApp (oculto inicialmente) -->
+                <div id="whatsapp-contact" class="form-contacto form-whatsapp" style="display: none;">
+                    
+                    <div class="form-grupo">
+                        <label for="wa-telefono">Teléfono</label>
+                        <input type="tel" id="wa-telefono" required>
+                    </div>
+                    
+                    <div class="form-grupo">
+                        <label for="wa-mensaje">Mensaje</label>
+                        <textarea id="wa-mensaje" rows="5" required></textarea>
+                    </div>
+                    
+                    <button id="btn-enviar-whatsapp" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+                    </button>
+                    
+                    <p class="whatsapp-nota">O escríbenos directamente al: 
+                        <a href="https://wa.me/1234567890" class="whatsapp-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i> +1 234 567 890
+                        </a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="info-contacto">
+                <div class="info-item animar">
+                    <div class="info-icono">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-texto">
+                        <h3>Dirección</h3>
+                        <p>Av. Constructores 1234, Ciudad Moderna</p>
+                    </div>
+                </div>
+                
+                <div class="info-item animar">
+                    <div class="info-icono">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-texto">
+                        <h3>Teléfono</h3>
+                        <p>+56965065031</p>
+                    </div>
+                </div>
+                
+                <div class="info-item animar">
+                    <div class="info-icono">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="info-texto">
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/56965065031" target="_blank">Envíanos un mensaje</a></p>
+                    </div>
+                </div>
+                
+                <div class="info-item animar">
+                    <div class="info-icono">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-texto">
+                        <h3>Email</h3>
+                        <p>info@constructora-moderna.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item animar">
+                    <div class="info-icono">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="info-texto">
+                        <h3>Horario</h3>
+                        <p>Lunes a Viernes: 8:00 - 18:00<br>Sábados: 9:00 - 13:00</p>
+                    </div>
+                </div>
+                
+                <div class="mapa animar">
+                    <!-- Mapa se insertaría aquí con iframe o similar -->
+                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=Av.Constructores+1234,Ciudad+Moderna&zoom=15&size=600x300&markers=color:red%7CAv.Constructores+1234,Ciudad+Moderna&key=YOUR_API_KEY" alt="Ubicación de Constructora Moderna">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contenedor">
+            <div class="footer-contenido">
+                <div class="footer-col">
+                    <h3>Constructora Moderna</h3>
+                    <p>Líderes en construcción de calidad con más de 15 años de experiencia en el mercado nacional.</p>
+                    <div class="redes-sociales">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Conócenos</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#">Obra Nueva</a></li>
+                        <li><a href="#">Remodelaciones</a></li>
+                        <li><a href="#">Diseño Arquitectónico</a></li>
+                        <li><a href="#">Consultoría</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Aviso Legal</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Constructora Moderna. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    // Alternar entre formularios de contacto
+    const btnEmail = document.getElementById('btn-email');
+    const btnWhatsapp = document.getElementById('btn-whatsapp');
+    const formEmail = document.querySelector('.form-email');
+    const formWhatsapp = document.getElementById('whatsapp-contact');
+    
+    btnEmail.addEventListener('click', () => {
+        btnEmail.classList.add('btn-opcion-activo');
+        btnWhatsapp.classList.remove('btn-opcion-activo');
+        formEmail.style.display = 'block';
+        formWhatsapp.style.display = 'none';
+    });
+    
+    btnWhatsapp.addEventListener('click', () => {
+        btnWhatsapp.classList.add('btn-opcion-activo');
+        btnEmail.classList.remove('btn-opcion-activo');
+        formWhatsapp.style.display = 'block';
+        formEmail.style.display = 'none';
+    });
+    
+    // Envío por WhatsApp
+    const btnEnviarWhatsapp = document.getElementById('btn-enviar-whatsapp');
+    
+    btnEnviarWhatsapp.addEventListener('click', () => {
+        const telefono = document.getElementById('wa-telefono').value;
+        const mensaje = document.getElementById('wa-mensaje').value;
+        
+        const texto = `Hola ${mensaje}`;
+        const url = `https://wa.me/56965065031?text=${encodeURIComponent(texto)}`;
+        
+        window.open(url, '_blank');
+    });
+</script>
+    <script>
+        // Limpiar formulario después del envío
+        const contactForm = document.getElementById('contact-form');
+
+        contactForm.addEventListener('submit', function(e) {
+            // Esto permite que Formspree procese el formulario primero
+            setTimeout(() => {
+                contactForm.reset(); // Limpia todos los campos del formulario
+            }, 1000);
+            
+            // Opcional: Mostrar mensaje de éxito
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Mensaje Enviado!';
+            submitBtn.style.backgroundColor = '#4CAF50'; // Verde para indicar éxito
+            
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.style.backgroundColor = ''; // Volver al color original
+            }, 3000);
+        });
+        // Menú responsive
+        const menuBtn = document.getElementById('menu-btn');
+        const navLista = document.getElementById('nav-lista');
+        
+        menuBtn.addEventListener('click', () => {
+            navLista.classList.toggle('active');
+            menuBtn.innerHTML = navLista.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Cambiar header al hacer scroll
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        
+        // Animaciones al hacer scroll
+        const animarElementos = document.querySelectorAll('.animar');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        animarElementos.forEach(el => observer.observe(el));
+        
+        // Smooth scrolling para enlaces
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                if (navLista.classList.contains('active')) {
+                    navLista.classList.remove('active');
+                    menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
